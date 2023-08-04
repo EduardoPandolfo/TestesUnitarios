@@ -16,9 +16,7 @@ public class CalculadoraServiceDivisaoPorZeroTest {
 
     @Test(expected = DivisaoPorZeroException.class)
     public void testeExceptionDivisaoPorZero() {
-        Double resultado = calculadoraService.dividir(1D, 0D);
-
-        Assert.fail();
+        calculadoraService.dividir(1D, 0D);
     }
 
 }

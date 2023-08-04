@@ -9,7 +9,7 @@ import java.time.LocalDate;
 
 public class DiaSemanaMatcher extends TypeSafeMatcher<LocalDate> {
 
-    private DayOfWeek diaSemana;
+    private final DayOfWeek diaSemana;
 
     public DiaSemanaMatcher(DayOfWeek diaSemana) {
         this.diaSemana = diaSemana;

@@ -2,7 +2,6 @@ package br.ce.wcaquino.servicos;
 
 import br.ce.wcaquino.EstoqueException;
 import br.ce.wcaquino.entidades.Filme;
-import br.ce.wcaquino.entidades.Locacao;
 import br.ce.wcaquino.entidades.Usuario;
 import org.junit.Assert;
 import org.junit.Test;
@@ -24,7 +23,7 @@ public class LocacaoServiceTesteExceptionEstoque {
 
         //acao
 
-        Locacao locacao = locacaoService.alugarFilme(usuario, Collections.singletonList(filme));
+        locacaoService.alugarFilme(usuario, Collections.singletonList(filme));
 
         Assert.fail();
     }
@@ -41,7 +40,7 @@ public class LocacaoServiceTesteExceptionEstoque {
         //acao
 
         try{
-            Locacao locacao = locacaoService.alugarFilme(usuario, Collections.singletonList(filme));
+            locacaoService.alugarFilme(usuario, Collections.singletonList(filme));
         } catch (Exception e) {
             System.out.println(e.getLocalizedMessage());
             System.out.println(EstoqueException.MSG);

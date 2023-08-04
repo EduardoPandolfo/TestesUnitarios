@@ -9,7 +9,6 @@ import br.ce.wcaquino.utils.DataUtils;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatterBuilder;
 import java.util.List;
 
 public class LocacaoService {

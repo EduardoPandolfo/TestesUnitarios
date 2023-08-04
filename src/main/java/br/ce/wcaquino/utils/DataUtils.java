@@ -1,14 +1,7 @@
 package br.ce.wcaquino.utils;
 
-import static java.util.Calendar.DAY_OF_MONTH;
-import static java.util.Calendar.DAY_OF_WEEK;
-import static java.util.Calendar.MONTH;
-import static java.util.Calendar.YEAR;
-
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.time.temporal.TemporalField;
-import java.util.Calendar;
 
 public class DataUtils {
 
