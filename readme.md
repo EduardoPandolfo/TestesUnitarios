@@ -1,4 +1,4 @@
-Curso testes Java
+Curso testes Java - Anotações (https://www.udemy.com/course/testes-unitarios-em-java/)
 
 Divididos em 3 etapas:
 1 - Cenário: Criação dos objetos, preparação das variáveis.
