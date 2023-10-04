@@ -4,11 +4,13 @@ import br.ce.wcaquino.dao.LocacaoDAOFake;
 import br.ce.wcaquino.entidades.Filme;
 import br.ce.wcaquino.entidades.Locacao;
 import br.ce.wcaquino.entidades.Usuario;
+import br.ce.wcaquino.utils.DataUtils;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.mockito.Mockito;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -32,6 +34,7 @@ public class CalculoValorLocacaoTest {
     public void setup() {
         locacaoService = new LocacaoService();
         locacaoService.setLocacaoDAO(new LocacaoDAOFake());
+        locacaoService.setDataUtils(new DataUtils());
     }
 
     @Parameterized.Parameters

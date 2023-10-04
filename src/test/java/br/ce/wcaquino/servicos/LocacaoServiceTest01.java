@@ -4,6 +4,7 @@ import br.ce.wcaquino.dao.LocacaoDAOFake;
 import br.ce.wcaquino.entidades.Filme;
 import br.ce.wcaquino.entidades.Locacao;
 import br.ce.wcaquino.entidades.Usuario;
+import br.ce.wcaquino.utils.DataUtils;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -22,6 +23,7 @@ public class LocacaoServiceTest01 {
 
         LocacaoService service = new LocacaoService();
         service.setLocacaoDAO(new LocacaoDAOFake());
+        service.setDataUtils(new DataUtils());
 
         //se utilizado no mesmo package pode habilitar acesso a variaveis de diferentes tipos de limitações
         System.out.println(service.vDefault);
